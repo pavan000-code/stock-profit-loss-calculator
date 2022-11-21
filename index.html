@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Calculator📈</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="pagewrap">
+        <nav class="navigation container">
+            <div class="nav-items">
+                <div class="nav-repo">
+                    <a href="https://github.com/pavan000-code/stock-profit-loss-calculator" target="_blank" class="nav-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <h1 class="nav-title">Stocks Calculator📈</h1>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="main-intro">
+                <h3>This calculator takes the price at which the stocks were bought and the current price of the stocks as well as the number  and cash paid and returns the resulting profit or loss on the stocks.</h3>
+            </div>
+            <form class="main-body">
+                <div class="bill-div">
+                    <label for="cost-price">
+                        COST PRICE OF EACH STOCK:
+                    </label>
+                    <input type="number" class="inputs" placeholder="Enter the cost price:" required min="1">
+                </div>
+                <div class="bill-div">
+                    <label for="bill-input">
+                        NUMBER OF STOCKS OWNED:
+                    </label>
+                    <input type="number" class="inputs" placeholder="Enter the number of stocks:" required min="1">
+                </div>
+                <div class="bill-div">
+                    <label for="bill-input">
+                        CURRENT PRICE OF EACH STOCK:
+                    </label>
+                    <input type="number" class="inputs" placeholder="Enter the current price " required min="1">
+
+                </div>
+                <button type="submit" id="cash-verify">CHECK</button>
+
+            </form>
+            <div class="main-output">
+                <p id="main-msg"></p>
+                <img id="image-show" src="" alt="New indicator">
+            </div>
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="footer-tagline">
+                <h2>Made with love by Pavan Kalyan.Available on:</h2>
+            </div>
+            <ul class="footer-socials">
+                <li class="footer-inline">
+                    <a class="footer-links" rel="noopener noreferrer" href="https://github.com/pavan000-code">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </li>
+                <li class="footer-inline">
+                    <a class="footer-links" target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/pavankalyan002">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
